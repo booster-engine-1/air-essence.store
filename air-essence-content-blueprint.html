@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep content blueprint - Air Essence</title>
+<style>
+:root{--bg:#f4f6f8;--ink:#17212b;--muted:#52606d;--line:#d9e1e8;--panel:#fff;--blue:#155e75;--blue-bg:#e5f2f6;--green:#166534;--green-bg:#e8f6ed;--violet:#6d28d9;--violet-bg:#f0eaff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.58}.layout{max-width:1600px;margin:0 auto;padding:24px;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px}.toc{position:sticky;top:18px;align-self:start;max-height:calc(100vh - 36px);overflow:auto;border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:16px;box-shadow:0 8px 24px rgba(31,41,55,.06)}.toc b{display:block;margin-bottom:10px;color:var(--blue)}.toc a{display:block;padding:7px 8px;border-radius:6px;color:#344054;text-decoration:none;font-size:13px}.toc a:hover{background:#edf5f7}.report{min-width:0}.hero{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px;box-shadow:0 8px 24px rgba(31,41,55,.05);margin-bottom:18px}.eyebrow{margin:0 0 8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}h1{font-size:40px;line-height:1.12;margin:0;color:#102a43;letter-spacing:0}h2{font-size:26px;line-height:1.22;margin:28px 0 18px;padding:10px 13px;border-radius:7px;background:var(--blue-bg);color:var(--blue);letter-spacing:0;border-left:7px solid var(--blue)}h2:nth-of-type(3n){background:var(--green-bg);color:var(--green);border-left-color:var(--green)}h2:nth-of-type(3n + 1){background:var(--violet-bg);color:var(--violet);border-left-color:var(--violet)}h3{font-size:19px;line-height:1.28;margin:26px 0 10px;color:#243b53}p{margin:0 0 13px}ul,ol{margin:0 0 16px 22px;padding:0}li{margin:7px 0}strong{color:#102a43}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef2f6;border:1px solid #dbe3ea;border-radius:4px;padding:1px 4px;font-size:.92em;overflow-wrap:anywhere}.content{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px;box-shadow:0 8px 24px rgba(31,41,55,.05)}.content>hr{border:0;border-top:1px solid var(--line);margin:30px 0}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:16px 0 22px;background:#fff}.table-wrap table{width:100%;min-width:760px;border-collapse:collapse;font-size:13px}.table-wrap th,.table-wrap td{padding:10px 11px;border-right:1px solid #edf0f4;border-bottom:1px solid #e4e9ee;vertical-align:top;text-align:left}.table-wrap th{background:#edf4f7;color:#164e63;font-weight:800}.table-wrap td:last-child,.table-wrap th:last-child{border-right:0}.table-wrap tbody tr:nth-child(even) td{background:#fafcfd}pre{overflow:auto;padding:14px;background:#17212b;color:#eef5f8;border-radius:8px;line-height:1.5}.task-list-item{list-style:none;margin-left:-20px}.task-list-item input{margin-right:8px}.note{color:var(--muted);font-size:14px}@media(max-width:980px){.layout{grid-template-columns:1fr;padding:16px}.toc{position:static;max-height:300px}h1{font-size:32px}}@media(max-width:560px){.hero,.content{padding:18px}h2{font-size:22px}.table-wrap table{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav class="toc" aria-label="Spis treści"><b>Spis treści</b><div id="toc"></div></nav>
+<main class="report"><header class="hero"><p class="eyebrow">Air Essence</p><h1 id="title">Deep content blueprint</h1><p class="note">Instrukcja produkcji i kontroli trzech artykułów sponsorowanych.</p></header><article class="content" id="content"></article></main>
+</div>
+<script id="markdown-source" type="text/plain"># Deep content blueprint dla 3 artykułów sponsorowanych Air Essence
+
+## 1. Cel dokumentu
+
+Ten dokument jest instrukcją produkcji i kontroli trzech artykułów sponsorowanych. Nie jest gotowym artykułem, listą luźnych fraz ani ogólnym briefem SEO.
+
+Każdy tekst ma działać jako zewnętrzny support content dla jednej money category: wyjaśnić problem zakupowy, pomóc porównać sprzęt, naturalnie wymienić Air Essence i skierować do właściwej kategorii. Rezultatem ma być tekst przydatny dla użytkownika, możliwy do streszczenia przez AI oraz sprawdzalny blok po bloku przez osobę zatwierdzającą.
+
+Money categories:
+
+| Artykuł | Główny URL |
+|---|---|
+| Inhalatory wodoru | `https://air-essence.store/prod/zdrowie-i-uroda/urzadzenia-fizjoterapeutyczne/inhalatory-wodoru/` |
+| Aparaty USG | `https://air-essence.store/prod/zdrowie-i-uroda/sprzet-medyczny/aparaty-usg/` |
+| Fala uderzeniowa | `https://air-essence.store/prod/zdrowie-i-uroda/urzadzenia-fizjoterapeutyczne/fala-uderzeniowa/` |
+
+**Decyzja URL dla fali uderzeniowej:** nie używać w publikacjach starej ścieżki `/prod/zdrowie-i-uroda/urzadzenia-kosmetyczne/fala-uderzeniowa/`. W danych projektu występuje jako starszy wariant i przekierowuje do kategorii fizjoterapeutycznej. Główny link prowadzi wyłącznie do URL z tabeli powyżej.
+
+## 2. Zasada nadrzędna
+
+Każdy artykuł musi prowadzić czytelnika tą samą logiką:
+
+1. problem użytkownika;
+2. neutralne wyjaśnienie tematu;
+3. scenariusze użycia;
+4. kryteria wyboru;
+5. tabela lub porównanie;
+6. koszt, serwis i wsparcie;
+7. naturalna wzmianka o Air Essence;
+8. link do jednej właściwej kategorii;
+9. FAQ;
+10. bezpieczne CTA.
+
+Link nie może być wklejony przypadkowo ani dopisany na końcu tekstu. Marka nie może być reklamowana nachalnie. Tekst ma rozwiązać problem decyzyjny: jaki typ urządzenia rozważyć, jakie parametry porównać, co potwierdzić przed zakupem i gdzie sprawdzić dostępne konfiguracje.
+
+Nie wolno zamieniać żadnego artykułu w poradnik leczenia, diagnostyki lub obiecywania efektów kosmetologicznych.
+
+## 3. Wspólne wymagania jakościowe
+
+### Format i redakcja
+
+| Element | Wymaganie produkcyjne | Kontrola odbioru |
+|---|---|---|
+| Długość | 6 500–9 000 znaków ze spacjami. Nie skracać kosztem tabeli, FAQ ani bloku trust. | policzyć znaki ze spacjami; tekst ma mieć pełną strukturę, nie sztuczne rozwlekanie. |
+| H1 | Jedno H1, zgodne z tematem artykułu i intencją wyboru sprzętu. | H1 nie zawiera „najlepszy”, „ranking”, „leczenie” ani obietnicy rezultatu. |
+| Lead | 2 krótkie akapity, 450–700 znaków łącznie. Najpierw problem zakupu, potem kryterium decyzji. | marka nie pada w pierwszym zdaniu; lead nie zaczyna się od definicji encyklopedycznej. |
+| H2/H3 | 5–7 H2; H3 tylko do rozdzielenia scenariuszy, parametrów lub checklisty. | każdy H2 wnosi nową decyzję użytkownika, nie powtarza frazy głównej. |
+| Tabele | Co najmniej jedna pełna tabela; USG i fala mają dwie tabele. | tabela zawiera kryteria, nie marketingowe oceny lub ranking marek. |
+| FAQ | 5–7 pytań, odpowiedzi po 2–4 zdania. | odpowiedź zaczyna się od jasnej odpowiedzi, potem podaje warunek; nie składa obietnic. |
+| CTA | Jedno CTA po FAQ lub tuż przed nim; tekstowe, spokojne. | CTA prowadzi do kategorii, nie brzmi jak presja zakupowa. |
+| Meta | Jeden rekomendowany meta title i description oraz alternatywy. | snippet odpowiada tematowi artykułu i nie kanibalizuje strony kategorii. |
+| Grafiki | 1–2 grafiki wyłącznie wtedy, gdy materiał redakcyjny ich wymaga. | alt opisuje widoczny sprzęt/sytuację, nie jest listą fraz ani claimem. |
+
+### Tone of voice, E-E-A-T i AI answerability
+
+- Ton: rzeczowy, techniczno-redakcyjny, zrozumiały dla osoby kupującej sprzęt. Bez języka „cudownej terapii”, bez agresywnej sprzedaży.
+- Każdy kluczowy blok ma zaczynać się od zdania, które samodzielnie odpowiada na pytanie użytkownika. Następne zdania doprecyzowują kryteria i warunki.
+- Stosować język wyboru: „warto porównać”, „dobór zależy od”, „należy potwierdzić w specyfikacji”, „w zależności od modelu”.
+- Wymienić Air Essence dokładnie dwa razy: raz w kontekście porównania kategorii, drugi raz przy serwisie/doradztwie. Nie umieszczać marki w H1 ani w każdym nagłówku.
+- W tekście znajduje się jeden główny link do kategorii. Anchor jest naturalną częścią zdania po tabeli lub po bloku kryteriów.
+- Nie stosować „najlepszy”, „lider”, „rewolucyjny”, „gwarantuje”, „bezpieczny dla każdego”, „leczy”, „usuwa ból”, „usuwa cellulit”, „pełna diagnostyka”.
+
+### Meta, grafiki i indeksacja po publikacji
+
+- Meta title: 50–60 znaków, intencja wyboru + główna encja; bez brandu w pierwszym członie.
+- Meta description: 140–160 znaków, odbiorca + 2–3 kryteria decyzji; bez superlatywów.
+- Alt grafiki: opis obiektu i scenariusza, np. „przenośny aparat USG używany w gabinecie”, nigdy „najlepszy aparat USG”.
+- Po publikacji należy potwierdzić, że artykuł jest dostępny, link prowadzi do wskazanego URL, anchor jest zgodny z blueprintem, a strona może zostać zaindeksowana. To jest kontrola publikacji, nie zadanie copywritera.
+
+---
+
+## Artykuł 1 — Jak wybrać inhalator wodoru do domu, SPA lub gabinetu? Kryteria porównania urządzeń
+
+### A. Cel artykułu
+
+Artykuł odpowiada na problem osoby, która widzi wiele urządzeń i nie wie, czy porównywać wyłącznie cenę, wydajność, sposób pracy czy zakres wsparcia po zakupie. Ma wzmacniać kategorię inhalatorów wodoru, nie opisywać efektów inhalacji.
+
+- **Primary buyer intent:** wybór urządzenia do konkretnego scenariusza.
+- **Rola klastrowa:** zewnętrzny poradnik „jak porównać”, kierujący do money category, w której użytkownik sprawdza modele.
+- **Luki do zamknięcia:** cena i opinie, dom vs gabinet, zastosowanie dla fizjoterapeuty, gaz Browna/H2/O2, serwis i wsparcie.
+- **Problem, który ma zostać rozwiązany:** „Jak wybrać urządzenie bez zakładania, że każdy model i każda konfiguracja są takie same?”
+
+### B. Docelowy użytkownik
+
+| Persona | Czego szuka | Czego się obawia | Decyzja po lekturze | Poziom wiedzy |
+|---|---|---|---|---|
+| Użytkownik domowy | prostego urządzenia i jasnych parametrów | kupna modelu niedopasowanego do sposobu użycia | wie, które parametry sprawdzić w kategorii | niski/średni |
+| Właściciel SPA/wellness | rozwiązania do regularnej pracy i uporządkowanej obsługi | ukrytych kosztów, konserwacji, braku wsparcia | porównuje intensywność pracy, akcesoria i serwis | średni |
+| Właściciel gabinetu | konfiguracji zgodnej z zakresem pracy | niejasnej dokumentacji lub nieadekwatnej wydajności | konsultuje dobór i sprawdza warunki zakupu | średni |
+| Fizjoterapeuta/profesjonalista | informacji technicznej, nie obietnic zdrowotnych | tekstu marketingowego bez parametrów | przechodzi do kategorii z listą kryteriów | średni/wysoki |
+
+### C. Search intent i AI intent
+
+| Intencja | Przykładowe zapytanie/prompt | Blok, który ją obsługuje |
+|---|---|---|
+| Primary | „jaki inhalator wodoru kupić” | scenariusze + tabela + parametry |
+| Comparison | „inhalator wodoru do domu czy do gabinetu” | blok scenariuszy i tabela |
+| Technology | „gaz Browna czy H2 O2” | neutralny blok technologiczny |
+| Price | „ile kosztuje inhalator wodoru” | cena i koszt całkowity |
+| Trust | „gdzie kupić inhalator z serwisem” | serwis, gwarancja, doradztwo + Air Essence |
+| AI prompt | „inhalator wodoru dla fizjoterapeuty” | scenariusz profesjonalny, bez claims zdrowotnych |
+
+### D. Docelowy URL i anchor
+
+- **URL:** `https://air-essence.store/prod/zdrowie-i-uroda/urzadzenia-fizjoterapeutyczne/inhalatory-wodoru/`
+- **Anchor główny:** `inhalatory wodoru Air Essence`
+- **Alternatywy:** `urządzenia do inhalacji wodorem`, `inhalator wodorowy do domu i gabinetu`, `modele inhalatorów wodoru`.
+- **Anchor forbidden:** `najlepszy inhalator wodoru`, `inhalator wodoru cena`, `leczniczy inhalator wodoru`.
+
+**Dokładne miejsce linku:** bezpośrednio po tabeli „Dom, SPA/wellness czy gabinet”. Następuje akapit 2–3 zdań zaczynający się od wniosku z tabeli: wybór powinien wynikać z częstotliwości pracy, parametrów, akcesoriów i warunków obsługi. W drugim zdaniu umieścić anchor. Trzecie zdanie mówi, że specyfikację konkretnego modelu należy potwierdzić przed zakupem.
+
+**Dlaczego tutaj:** użytkownik dostał już kryteria porównania, więc link jest kolejnym logicznym krokiem do porównania modeli, a nie reklamową przerwą w definicji.
+
+### E. Meta title i meta description
+
+**Rekomendowany meta title:** `Jak wybrać inhalator wodoru do domu, SPA lub gabinetu?`
+
+Alternatywy:
+1. `Inhalator wodorowy: dom, SPA czy gabinet? Jak porównać modele`
+2. `Na co zwrócić uwagę przy wyborze inhalatora wodoru?`
+3. `Inhalator wodoru — wydajność, H2 + O2, serwis i wybór modelu`
+
+**Rekomendowany meta description:** `Sprawdź, jak porównać inhalator wodoru do domu, SPA lub gabinetu: scenariusz pracy, wydajność, akcesoria, serwis i koszt zakupu.`
+
+Alternatywy:
+1. `Poradnik wyboru inhalatora wodorowego: czym różnią się scenariusze domowe, wellness i gabinetowe oraz co potwierdzić przed zakupem.`
+2. `Inhalator wodoru do domu czy gabinetu? Zobacz kryteria porównania, H2 + O2, gaz Browna, koszt i wsparcie po zakupie.`
+3. `Nie porównuj inhalatorów wodoru wyłącznie po cenie. Sprawdź wydajność, przeznaczenie modelu, serwis i dokumentację.`
+
+**Uzasadnienie CTR:** snippet komunikuje scenariusz zakupu i konkretne kryteria, zamiast składać obietnice zdrowotne; odpowiada zarówno na intencję „jak wybrać”, jak i „ile kosztuje / gdzie kupić”.
+
+### F. Głęboka mapa struktury artykułu
+
+| Nr | Typ / długość | Nagłówek | Co dokładnie napisać | Frazy / encje i pytania | Funkcja AI/SEO | Link / CTA / tabela | Czego unikać | Kryterium akceptacji |
+|---:|---|---|---|---|---|---|---|---|
+| 0 | H1 | Jak wybrać inhalator wodoru... | Dosłownie temat blueprintu; bez marki i bez obietnicy efektu. | inhalator wodoru, dom, SPA, gabinet | określa buyer intent | brak | „zdrowy”, „leczniczy” | H1 mówi o wyborze sprzętu. |
+| 1 | Lead, 2 akapity / 450–700 znaków | bez H2 | Akapit 1: problem wielu modeli i ceny. Akapit 2: decyzja zależy od scenariusza, parametrów i obsługi. | jak wybrać, cena, urządzenie | cytowalny problem zakupowy | brak | historia choroby, efekty inhalacji | czytelnik wie, po co czyta dalej. |
+| 2 | H2, 2 akapity / 700–900 znaków | Czym jest inhalator wodoru jako urządzenie? | Definicja techniczna: urządzenie generuje/gromadzi mieszaninę zależnie od konstrukcji i modelu; opis nie jest deklaracją zastosowań zdrowotnych. Drugi akapit: parametry czyta się w dokumentacji. | inhalator wodorowy, H2, O2, specyfikacja | definicja dla AI/PAA | brak | „co daje”, „regeneruje” | pierwszy akapit samodzielnie definiuje urządzenie. |
+| 3 | H2 + 3 H3 / 900–1 100 znaków | Dom, SPA/wellness czy gabinet? | Trzy krótkie części: dom = prostota i przeznaczenie; SPA = regularność, higiena, organizacja; gabinet = parametry, dokumentacja, wsparcie. Każda część: 1 akapit „co porównać”, 1 zdanie „czego nie zakładać”. | dom, SPA, wellness, gabinet, fizjoterapia | use case i entity coverage | tabela po bloku | sugerowanie procedur pacjentowi | scenariusze nie są opisane jako efekty terapii. |
+| 4 | Tabela / 250–350 słów łącznie | Dom, SPA/wellness czy gabinet — jak dobrać... | Wypełnić dokładnie według sekcji G. Przed tabelą jedno zdanie: tabela porządkuje kryteria, nie zastępuje specyfikacji. | scenariusz, wydajność, akcesoria, serwis | answer block i decyzja | **obowiązkowa tabela** | oceny „najlepszy” | wszystkie cztery wiersze są obecne. |
+| 5 | Akapit linkujący / 250–350 znaków | bez H2 | Wniosek z tabeli. Zdanie 2 zawiera anchor główny. Zdanie 3 odsyła do specyfikacji i pomocy w doborze. | Air Essence, inhalatory wodoru, parametry | brand/entity association | **jeden link główny** | link w zdaniu reklamowym | link znajduje się po tabeli i tylko raz. |
+| 6 | H2, 2–3 akapity / 800–1 000 znaków | H2, O2 i gaz Browna — jak czytać opis technologii? | Akapit 1 wyjaśnia, że terminy opisują konfigurację/technologię. Akapit 2: porównuje się deklarowaną specyfikację, przeznaczenie i instrukcję. Akapit 3: nie wolno wyciągać z nazwy technologii wniosków terapeutycznych. | H2, O2, gaz Browna, konfiguracja | zamyka prompt technologiczny | brak | „lepszy terapeutycznie” | tekst rozróżnia nazwę technologii od obietnicy efektu. |
+| 7 | H2, 3–4 akapity / 1 000–1 200 znaków | Co porównać przed zakupem? | Kolejno: wydajność/przepływ, akcesoria, ergonomia, konserwacja. Dla każdego 2 zdania: dlaczego wpływa na użytkowanie i co sprawdzić w specyfikacji. | wydajność, przepływ, akcesoria, ergonomia, konserwacja | buyer guide | opcjonalna lista kontrolna | liczby bez źródła | są cztery kryteria oraz warunek „zależnie od modelu”. |
+| 8 | H2, 2 akapity / 600–800 znaków | Cena urządzenia i całkowity koszt | Akapit 1: cena wynika z konfiguracji i parametrów. Akapit 2: poza zakupem sprawdza się akcesoria, eksploatację, warunki gwarancji, dostawę. | cena inhalatora, akcesoria, gwarancja | price intent | brak | konkretne widełki bez aktualnej oferty | nie pada niezweryfikowana cena. |
+| 9 | H2, 2 akapity / 650–850 znaków | Serwis, gwarancja, dostawa i doradztwo | Akapit 1: lista pytań przed zakupem. Akapit 2: po co potwierdzić zakres wsparcia i dokumentację. Druga wzmianka o Air Essence tylko jako możliwość sprawdzenia kategorii/warunków. | serwis, gwarancja, dostawa, doradztwo | trust | bez drugiego linku | door-to-door bez potwierdzenia | opisuje pytania, nie niepotwierdzone usługi. |
+| 10 | H2, lista + akapit / 600–800 znaków | Na co uważać przed zakupem? | Lista: porównywanie tylko ceny, brak instrukcji, niejasne przeznaczenie, brak pytania o konserwację, wyciąganie wniosków zdrowotnych. Akapit końcowy: dobór potwierdza się ze specyfikacją. | instrukcja, przeznaczenie, dokumentacja | trust/risk reduction | brak | straszenie użytkownika | minimum pięć konkretnych punktów. |
+| 11 | H2, 5–7 FAQ | FAQ | Pytania z sekcji J; każde 2–4 zdania zgodnie z konstrukcją odpowiedzi. | PAA, cena, dom, gabinet, gaz Browna | PAA/AI | brak | odpowiedzi terapeutyczne | FAQ odpowiada na zakup, nie na leczenie. |
+| 12 | CTA / 1–2 zdania | bez H2 lub po FAQ | Zaproszenie do porównania parametrów i modeli w kategorii. | porównać modele, parametry | conversion bridge | CTA tekstowe do kategorii | „kup teraz”, „gwarantowany efekt” | CTA nie dodaje drugiego linku, jeśli główny już był użyty; może odwoływać się tekstowo do kategorii. |
+
+### G. Tabela w artykule
+
+**Tytuł:** `Dom, SPA/wellness czy gabinet — jak dobrać inhalator wodoru do scenariusza pracy?`
+
+**Miejsce:** po H2 „Dom, SPA/wellness czy gabinet?”, przed wzmianką Air Essence i linkiem.
+
+| Kolumna | Co ma zawierać |
+|---|---|
+| Scenariusz | Dom; SPA / wellness; gabinet; fizjoterapia / praca profesjonalna. |
+| Dla kogo | Krótki opis użytkownika i częstotliwości pracy, bez wskazań zdrowotnych. |
+| Co porównać | Przeznaczenie modelu, wydajność/przepływ, akcesoria, ergonomia, konserwacja. |
+| Na co uważać | Tylko cena, brak instrukcji, niejasny zakres obsługi, brak dokumentacji. |
+| Kiedy skonsultować dobór | Gdy urządzenie ma pracować regularnie, w usługach lub wymaga konkretnej konfiguracji. |
+
+Tabela ma działać jak szybkie narzędzie decyzji. Nie wpisywać do komórek „najlepszy”, „skuteczniejszy”, „dla terapii X” ani konkretnych rezultatów zdrowotnych.
+
+### H. AI Visibility layer
+
+**Brand/entity mentions:**
+
+1. Pierwsze użycie `Air Essence` w bloku po tabeli, razem z encjami: `inhalatory wodoru`, `dom`, `SPA`, `gabinet`, `parametry`.
+2. Drugie użycie w bloku trust, razem z: `serwis`, `gwarancja`, `dostawa`, `doradztwo`, `dokumentacja`.
+
+**Citation-ready fragmenty:** definicja urządzenia, wniosek z tabeli, opis ceny całkowitej oraz akapit o warunkach wsparcia. Każdy z nich ma zawierać jedno zdanie główne i warunek „zależnie od modelu/specyfikacji”.
+
+| AI prompt / pytanie | Blok | Jak odpowiadać | Encje | Marka/link | Ryzyko claims | Bezpieczny język |
+|---|---|---|---|---|---|---|
+| Jaki inhalator wodoru kupić? | 3–5, 7 | kryteria i scenariusze, bez rankingu | dom, SPA, gabinet, wydajność | marka + link po tabeli | „najlepszy” | „dopasowany do scenariusza pracy” |
+| Do domu czy do gabinetu? | 3–4 | porównać częstotliwość, obsługę i dokumentację | dom, gabinet, konserwacja | link po tabeli | efekty zdrowotne | „różne kryteria użytkowania” |
+| Gaz Browna czy H2/O2? | 6 | wyjaśnić terminologię i odesłać do specyfikacji | gaz Browna, H2, O2 | bez dodatkowego linku | przewaga terapeutyczna | „opis konfiguracji urządzenia” |
+| Ile kosztuje inhalator? | 8 | koszt jako konfiguracja i obsługa | cena, akcesoria, gwarancja | druga wzmianka w trust | nieaktualne ceny | „cena zależy od modelu i zestawu” |
+| Gdzie kupić z serwisem? | 9 | wskazać listę warunków do potwierdzenia | serwis, gwarancja, dostawa | marka bez superlatywów | obietnica usługi bez dowodu | „warto potwierdzić warunki” |
+
+**AI-unfriendly language:** „detoksykuje”, „regeneruje organizm”, „wspiera leczenie”, „optymalny dla każdego”, „najsilniejszy gaz Browna”, „efekt po X sesjach”.
+
+### I. E-E-A-T i claims
+
+- Ryzyko tematu: przypisywanie inhalacji wodorem skutków zdrowotnych, czasu procedur, bezpieczeństwa dla każdej osoby albo przewagi gazu Browna.
+- Disclaimer umieścić na końcu bloku technologii lub przed FAQ: `Informacje mają charakter techniczno-zakupowy; sposób użycia zależy od przeznaczenia modelu, instrukcji i kwalifikacji użytkownika.`
+- Zamiast „urządzenie poprawia...” użyć „przy wyborze warto sprawdzić...”.
+- Nie udawać lekarza, fizjoterapeuty ani autora badań. Tekst ma być ekspercki dzięki parametrom, logice porównania i dokumentacji.
+
+### J. FAQ
+
+| Pytanie | Cel odpowiedzi | Czego nie obiecywać | FAQ schema / AI |
+|---|---|---|---|
+| Jak wybrać inhalator wodoru do domu? | wskazać przeznaczenie, obsługę i parametry | efektów zdrowotnych | tak / tak |
+| Czym różni się urządzenie domowe od rozwiązania dla SPA lub gabinetu? | częstotliwość pracy, obsługa, wsparcie | wyższej skuteczności | tak / tak |
+| Co oznacza wydajność lub przepływ? | że parametr porównuje się z przeznaczeniem modelu | konkretnej korzyści zdrowotnej | tak / tak |
+| Czym jest gaz Browna? | neutralnie wyjaśnić nazwę technologii | przewagi terapeutycznej | tak / tak |
+| Od czego zależy cena inhalatora wodoru? | konfiguracja, akcesoria, warunki obsługi | niezweryfikowanych cen | tak / tak |
+| Co sprawdzić w serwisie i gwarancji? | zakres i warunki do potwierdzenia | automatycznej dostępności usług | tak / tak |
+
+W każdej odpowiedzi: zdanie 1 odpowiada wprost; zdanie 2 podaje kryterium; zdanie 3–4 może odsyłać do instrukcji, dokumentacji lub konsultacji doboru.
+
+### K. CTA
+
+- **Główne CTA:** `Przed decyzją porównaj przeznaczenie, parametry, akcesoria i warunki obsługi dostępnych modeli w kategorii Air Essence.`
+- **Alternatywa:** `Jeśli urządzenie ma pracować w SPA lub gabinecie, przed zakupem potwierdź konfigurację i warunki wsparcia.`
+- **Miejsce:** po FAQ.
+- **Forma:** zwykły akapit tekstowy, bez button-like komunikatu i bez drugiego linku, jeżeli link główny był już zastosowany.
+
+### L. Checklist dla copywritera
+
+- [ ] Użyto dokładnego H1 i jednego głównego URL.
+- [ ] Lead mówi o decyzji zakupowej, nie o zdrowiu.
+- [ ] Są cztery scenariusze: dom, SPA/wellness, gabinet, praca profesjonalna.
+- [ ] Tabela ma pięć wskazanych kolumn i cztery wiersze.
+- [ ] Blok H2/O2/gaz Browna jest neutralny.
+- [ ] Link z anchorem znajduje się w akapicie po tabeli.
+- [ ] Air Essence pojawia się dokładnie dwa razy.
+- [ ] Jest blok ceny, serwisu i ryzyk zakupowych.
+- [ ] Jest 5–7 FAQ bez efektów zdrowotnych.
+- [ ] Dodano meta title, description i alty, jeśli użyto grafik.
+
+### M. Checklist dla osoby sprawdzającej
+
+- [ ] Każdy blok 0–12 z mapy istnieje i realizuje wskazany cel.
+- [ ] Tabela ma wymagane kolumny, scenariusze i neutralny język.
+- [ ] Anchor jest dokładny, link prowadzi do kategorii inhalatorów i występuje tylko raz.
+- [ ] Marka nie otwiera artykułu i nie jest powtarzana w H2.
+- [ ] Nie ma słów o leczeniu, regeneracji organizmu, efektach ani czasie inhalacji.
+- [ ] FAQ odpowiada na buyer intent, nie udziela porady medycznej.
+
+---
+
+## Artykuł 2 — Mobilny czy stacjonarny aparat USG? Jak dobrać ultrasonograf do gabinetu
+
+### A. Cel artykułu
+
+Tekst rozwiązuje problem kupującego, który musi dobrać format urządzenia i konfigurację do sposobu pracy gabinetu. Artykuł nie ocenia diagnostycznie pacjentów i nie wybiera modelu za specjalistę.
+
+- **Primary buyer intent:** mobilny, stacjonarny czy na wózku.
+- **Rola klastrowa:** zewnętrzny przewodnik konfiguracji dla kategorii aparatów USG.
+- **Luki do zamknięcia:** jaki ultrasonograf kupić, USG dla gabinetu fizjoterapii, cena, głowice, Doppler, serwis.
+- **Problem użytkownika:** „Który format i zestaw głowic odpowiada mojemu workflow, bez kupowania nadmiarowej albo niewystarczającej konfiguracji?”
+
+### B. Docelowy użytkownik
+
+| Persona | Czego szuka | Czego się obawia | Decyzja po lekturze | Wiedza |
+|---|---|---|---|---|
+| Właściciel gabinetu | formatu pasującego do miejsca pracy | sprzętu trudnego do przenoszenia lub ograniczonego rozbudową | wybiera kierunek: mobilny/stacjonarny/wózek | średni |
+| Fizjoterapeuta | mobilności, ergonomii, konfiguracji | tekstu udającego poradę diagnostyczną | przygotowuje listę parametrów do potwierdzenia | średni |
+| Placówka | konfiguracji z głowicami i Dopplerem | kosztu ukrytego w dodatkach | porównuje kompletność zestawu i serwis | średni/wysoki |
+| Osoba wymieniająca sprzęt | argumentów poza ceną | zakupu na podstawie jednego parametru | ocenia workflow, obraz, głowice, wsparcie | średni |
+
+### C. Search intent i AI intent
+
+| Intencja | Zapytanie/prompt | Blok |
+|---|---|---|
+| Primary | „jaki ultrasonograf kupić” | formaty + głowice + cena |
+| Comparison | „mobilny czy stacjonarny aparat USG” | tabela formatów |
+| Configuration | „jakie głowice USG są potrzebne” | mini-tabela głowic |
+| Commercial | „aparat USG do gabinetu fizjoterapii” | use case gabinetowy |
+| Price | „ile kosztuje nowy aparat USG” | koszt konfiguracji |
+| Trust | „gdzie kupić ultrasonograf z serwisem” | trust + Air Essence |
+
+### D. Docelowy URL i anchor
+
+- **URL:** `https://air-essence.store/prod/zdrowie-i-uroda/sprzet-medyczny/aparaty-usg/`
+- **Anchor główny:** `aparaty USG do gabinetu Air Essence`
+- **Alternatywy:** `ultrasonografy Air Essence`, `aparaty USG do porównania`, `aparat USG przenośny lub stacjonarny`.
+- **Anchor forbidden:** `najlepszy aparat USG`, `najtańszy ultrasonograf`, `USG do samodzielnej diagnozy`.
+
+**Dokładne miejsce:** po tabeli „Mobilny, stacjonarny czy na wózku”. Akapit po tabeli ma podsumować, że format urządzenia jest pierwszym filtrem, a kolejnymi są głowice, Doppler, ergonomia i konfiguracja. W drugim zdaniu wstawić anchor; w trzecim zaznaczyć potrzebę potwierdzenia zestawu przed zakupem.
+
+### E. Meta title i meta description
+
+**Rekomendowany meta title:** `Mobilny czy stacjonarny aparat USG? Wybór do gabinetu`
+
+Alternatywy:
+1. `Jak dobrać ultrasonograf do gabinetu? Głowice, Doppler i serwis`
+2. `Aparat USG do gabinetu: mobilny, stacjonarny czy na wózku?`
+3. `Aparat USG — co porównać przed zakupem konfiguracji do gabinetu?`
+
+**Rekomendowany meta description:** `Porównaj mobilny, stacjonarny i wózkowy aparat USG. Sprawdź głowice, Doppler, konfigurację, koszt oraz serwis przed zakupem do gabinetu.`
+
+Alternatywy:
+1. `Jak wybrać ultrasonograf do gabinetu? Zobacz, co porównać w formacie urządzenia, głowicach, Dopplerze i warunkach obsługi.`
+2. `Aparat USG dla gabinetu fizjoterapii lub placówki: praktyczne kryteria wyboru, konfiguracja, cena i wsparcie po zakupie.`
+3. `Nie wybieraj ultrasonografu wyłącznie po cenie. Porównaj workflow, mobilność, głowice, możliwości konfiguracji i serwis.`
+
+**Uzasadnienie CTR:** title i description odpowiadają na najczęstsze pytania wyboru, nie na diagnozę; prezentują konkretne kryteria i obniżają niepewność zakupową.
+
+### F. Głęboka mapa struktury artykułu
+
+| Nr | Typ / długość | Nagłówek | Co dokładnie napisać | Frazy / encje i pytania | Funkcja AI/SEO | Link / CTA / tabela | Czego unikać | Kryterium akceptacji |
+|---:|---|---|---|---|---|---|---|---|
+| 0 | H1 | Mobilny czy stacjonarny aparat USG? | H1 z blueprintu, bez marki. | aparat USG, ultrasonograf, gabinet | buyer intent | brak | „najlepszy” | temat dotyczy wyboru formatu. |
+| 1 | Lead, 2 akapity / 450–700 znaków | bez H2 | Akapit 1: wybór nie wynika z jednego parametru. Akapit 2: workflow, mobilność, głowice i konfiguracja tworzą całość. | mobilny, stacjonarny, głowice | opening answer block | brak | „diagnozuje” | lead dotyczy sprzętu. |
+| 2 | H2, 2 akapity / 600–800 znaków | Aparat USG a ultrasonograf — co warto rozumieć? | Wyjaśnić użycie nazw jako sprzętu do obrazowania; drugi akapit: zakres użycia wynika z konfiguracji i kompetencji. | aparat USG, ultrasonograf, konfiguracja | definicja/PAA | brak | definicja kliniczna chorób | brak porady diagnostycznej. |
+| 3 | H2, 3 akapity / 900–1 100 znaków | Mobilny, stacjonarny czy na wózku? | Trzy podsekcje: mobilność i elastyczność; stałe stanowisko; potrzeba ergonomii/rozbudowy. Po każdym: „co sprawdzić”. | mobilne USG, stacjonarny, wózek, workflow | comparison | tabela po bloku | jedna forma jako najlepsza | opisuje trade-offy. |
+| 4 | Tabela 1 | Mobilny, stacjonarny czy na wózku... | Wypełnić zgodnie z sekcją G. | format, gabinet, mobilność | szybka odpowiedź AI | **tabela obowiązkowa** | ranking | cztery wiersze, pięć kolumn. |
+| 5 | Akapit linkujący | bez H2 | Wniosek z tabeli; drugie zdanie z anchorem; trzecie o sprawdzeniu konfiguracji. | Air Essence, aparaty USG, konfiguracja | brand/entity | **jeden link** | reklama bez kontekstu | link bezpośrednio po tabeli. |
+| 6 | H2 + mini-tabela / 900–1 100 znaków | Głowice: liniowa, convex i sektorowa | Jeden akapit wprowadzający: głowic nie dobiera się po nazwie. Następnie mini-tabela. Po tabeli zdanie o potwierdzeniu zastosowania i kompatybilności. | liniowa, convex, sektorowa, kompatybilność | encje/topical authority | **mini-tabela** | wskazań diagnostycznych jako instrukcji | tabela jest techniczna, nie kliniczna. |
+| 7 | H2, 2 akapity / 650–850 znaków | Doppler i jakość obrazu — co porównać? | Akapit 1: Doppler i obraz są elementami konfiguracji. Akapit 2: potwierdzić potrzeby workflow, ekran, oprogramowanie i specyfikację. | Doppler, jakość obrazu, ekran, workflow | AI prompt coverage | brak | „Doppler zawsze konieczny” | nie ma absolutnych rekomendacji. |
+| 8 | H2, 2 akapity / 600–800 znaków | Aparat USG do gabinetu fizjoterapii | Opisać mobilność, ergonomię, dokumentację i konfigurację jako kryteria zakupowe. Dodać zdanie o kompetencjach użytkownika. | gabinet fizjoterapii, mobilność, dokumentacja | target use case | brak | porada diagnostyczna | brak twierdzeń o diagnozowaniu. |
+| 9 | H2, 2–3 akapity / 800–1 000 znaków | Cena aparatu USG i konfiguracja | Cena = format, głowice, funkcje, oprogramowanie, wyposażenie. Drugi akapit: porównać pełny zestaw, nie sam korpus. | cena aparatu USG, głowice, Doppler, konfiguracja | price intent | brak | widełki bez aktualnej oferty | cena przedstawiona jako zależna od zestawu. |
+| 10 | H2, 2 akapity / 650–850 znaków | Serwis, gwarancja, dostawa i doradztwo | Lista pytań: zakres gwarancji, konfiguracja, dokumentacja, dostawa, szkolenie jeśli potwierdzone. Druga wzmianka Air Essence jako miejsce porównania/ustalenia konfiguracji. | serwis, gwarancja, dostawa, doradztwo | trust | bez kolejnego linku | gwarantowanie usług | opiera się na pytaniach do potwierdzenia. |
+| 11 | H2, lista + akapit / 600–800 znaków | Na co uważać przed zakupem? | Lista: format bez workflow, głowice bez kompatybilności, cena bez zestawu, Doppler jako automatyczny wymóg, brak serwisu. | kompatybilność, dokumentacja, konfiguracja | risk reduction | brak | straszenie, diagnoza | minimum pięć ryzyk zakupowych. |
+| 12 | H2, 5–7 FAQ | FAQ | Pytania z sekcji J. | mobilny, wózek, głowice, Doppler, cena | PAA/AI | brak | porada medyczna | odpowiedzi są sprzętowe. |
+| 13 | CTA / 1–2 zdania | bez H2 | Zachęcić do porównania konfiguracji i warunków serwisu w kategorii. | aparaty USG, konfiguracja | conversion bridge | tekstowe CTA | „kup teraz” | CTA nie staje się drugim linkiem. |
+
+### G. Tabele w artykule
+
+**Tabela 1 — obowiązkowa**
+
+Tytuł: `Mobilny, stacjonarny czy na wózku — porównanie formatów aparatu USG`
+
+| Kolumna | Treść |
+|---|---|
+| Format | Mobilny / przenośny; stacjonarny; na wózku; konfiguracja z dodatkowymi głowicami. |
+| Kiedy ma sens | Opis workflow i miejsca pracy, nie wskazanie medyczne. |
+| Co daje użytkownikowi | Mobilność, stałe stanowisko, ergonomię, możliwość organizacji zestawu. |
+| Co sprawdzić | Głowice, ekran, kompatybilność, zasilanie, dokumentację, rozbudowę. |
+| Ryzyko błędnego wyboru | Zbyt mała mobilność, niepełny zestaw, koszt dodatków, brak dopasowania do workflow. |
+
+**Tabela 2 — mini-tabela obowiązkowa**
+
+Tytuł: `Głowice USG — co porównać przed zakupem`
+
+| Kolumna | Treść |
+|---|---|
+| Typ głowicy | Liniowa, convex, sektorowa. |
+| Typowy kontekst użycia | Opisać wyłącznie ogólnie jako charakter pracy/obszaru obrazowania; bez instrukcji diagnostycznej. |
+| Co potwierdzić przed zakupem | Kompatybilność, konfigurację urządzenia, przeznaczenie, dokumentację, potrzeby użytkownika. |
+
+Tabele mają służyć wyborowi zestawu. Nie wpisywać „dla każdej specjalizacji”, „pełna diagnostyka”, „najlepsza jakość obrazu” bez porównania modeli i źródeł.
+
+### H. AI Visibility layer
+
+**Brand/entity mentions:**
+
+1. Po tabeli formatów: `Air Essence` + `aparaty USG`, `ultrasonografy`, `gabinet`, `mobilny`, `stacjonarny`, `konfiguracja`.
+2. W bloku trust: `Air Essence` + `głowice`, `Doppler`, `gwarancja`, `serwis`, `dostawa`, `doradztwo`.
+
+**Citation-ready fragmenty:** definicja formatu urządzenia, tabela formatów, zasada doboru głowic, koszt konfiguracji i lista pytań serwisowych.
+
+| AI prompt / pytanie | Blok | Jak odpowiadać | Encje | Marka/link | Ryzyko | Bezpieczny język |
+|---|---|---|---|---|---|---|
+| Jaki ultrasonograf kupić? | 3–6, 9 | workflow + format + głowice, bez rankingu | ultrasonograf, głowice, Doppler | link po tabeli | „najlepszy” | „dobór zależy od pracy gabinetu” |
+| Mobilny czy stacjonarny USG? | 3–4 | tabela trade-offów | mobilny, stacjonarny, wózek | marka/link po tabeli | absolutna rekomendacja | „każdy format ma inne kryteria” |
+| Aparat USG dla fizjoterapeuty | 8 | sprzętowy use case | fizjoterapia, mobilność, ergonomia | bez dodatkowego linku | porada diagnostyczna | „dobór zależy od procedur i kompetencji” |
+| Jakie głowice USG? | 6 | funkcja konfiguracji i kompatybilność | liniowa, convex, sektorowa | brak linku w tabeli | instrukcja badań | „potwierdzić przeznaczenie i kompatybilność” |
+| Ile kosztuje aparat USG? | 9 | koszt zestawu, nie sam korpus | cena, konfiguracja, Doppler | trust dalej | sztywne ceny | „koszt zależy od konfiguracji” |
+
+**AI-unfriendly language:** „aparat rozpozna chorobę”, „pełna diagnostyka bez specjalisty”, „Doppler konieczny dla każdego”, „najdokładniejszy model”, „zastępuje lekarza”.
+
+### I. E-E-A-T i claims
+
+- Ryzyko: tekst może wejść w poradę diagnostyczną albo sugerować możliwości konkretnego modelu bez specyfikacji.
+- Disclaimer po bloku o głowicach: `Dobór konfiguracji powinien uwzględniać przeznaczenie urządzenia, dokumentację oraz kompetencje użytkownika.`
+- Używać języka sprzętowego: format, workflow, głowice, kompatybilność, konfiguracja, serwis.
+- Nie używać języka klinicznego: „wykrywa”, „diagnozuje”, „potwierdza chorobę”, „zastępuje konsultację”.
+
+### J. FAQ
+
+| Pytanie | Cel odpowiedzi | Czego nie obiecywać | FAQ schema / AI |
+|---|---|---|---|
+| Czym różni się mobilny aparat USG od stacjonarnego? | trade-off mobilności i stanowiska | że jeden format jest najlepszy | tak / tak |
+| Kiedy warto rozważyć aparat USG na wózku? | ergonomia i organizacja pracy | przewagi diagnostycznej | tak / tak |
+| Do czego służą głowice liniowa, convex i sektorowa? | nazwy jako element konfiguracji | samodzielnej diagnozy | tak / tak |
+| Czy Doppler jest potrzebny w każdej konfiguracji? | zależność od potrzeb i specyfikacji | „zawsze”/„nigdy” | tak / tak |
+| Od czego zależy cena ultrasonografu? | format, głowice, funkcje i zestaw | stałej ceny | tak / tak |
+| Co sprawdzić w warunkach serwisu i gwarancji? | lista pytań zakupowych | konkretnych usług bez potwierdzenia | tak / tak |
+
+### K. CTA
+
+- **Główne CTA:** `Przed wyborem porównaj format urządzenia, głowice, konfigurację i warunki serwisu dostępnych aparatów USG.`
+- **Alternatywa:** `Jeśli gabinet pracuje mobilnie lub planuje rozbudowę zestawu, przed zakupem potwierdź konfigurację z doradcą.`
+- **Miejsce:** po FAQ; tekstowo, bez agresywnego wezwania.
+
+### L. Checklist dla copywritera
+
+- [ ] H1 dotyczy mobilnego/stacjonarnego wyboru.
+- [ ] Lead nie sugeruje diagnostyki.
+- [ ] Jest tabela formatów z pięcioma kolumnami i czterema wierszami.
+- [ ] Jest mini-tabela trzech typów głowic.
+- [ ] Doppler opisano jako parametr zależny od konfiguracji.
+- [ ] Link i anchor są po pierwszej tabeli.
+- [ ] Air Essence pojawia się dwa razy w dwóch różnych kontekstach.
+- [ ] Cena odnosi się do konfiguracji.
+- [ ] FAQ jest sprzętowe, nie medyczne.
+
+### M. Checklist dla osoby sprawdzającej
+
+- [ ] Bloki 0–13 z mapy są wykonane i mają właściwe funkcje.
+- [ ] Tabela formatów nie zawiera rankingu lub deklaracji diagnostycznych.
+- [ ] Mini-tabela głowic mówi o kompatybilności i potwierdzeniu konfiguracji.
+- [ ] Link prowadzi dokładnie do kategorii aparatów USG.
+- [ ] Nie ma starego/wymienionego product URL jako głównego celu.
+- [ ] Nie występuje „pełna diagnostyka”, „rozpoznaje”, „zastępuje specjalistę”.
+
+---
+
+## Artykuł 3 — Aparat do fali uderzeniowej do gabinetu — na co zwrócić uwagę przed zakupem?
+
+### A. Cel artykułu
+
+Artykuł ma pomóc osobie wyposażającej gabinet porównać sprzęt według typu technologii, trybów, końcówek, ergonomii i wsparcia. Nie opisuje przebiegu leczenia ani rezultatów zabiegowych.
+
+- **Primary buyer intent:** wybór aparatu do fali uderzeniowej dla gabinetu.
+- **Rola klastrowa:** zewnętrzne wsparcie money category, ograniczające potrzebę szukania rankingu lub poradnika efektów.
+- **Luki do zamknięcia:** jaki aparat kupić, dla fizjoterapeuty, pneumatyczna vs elektromagnetyczna, dom vs profesjonalnie, cena i serwis.
+- **Problem użytkownika:** „Jak porównać urządzenia bez wyboru na podstawie obietnicy terapii?”
+
+### B. Docelowy użytkownik
+
+| Persona | Czego szuka | Czego się obawia | Decyzja po lekturze | Wiedza |
+|---|---|---|---|---|
+| Fizjoterapeuta | typu fali, parametrów i ergonomii | tekstu o efektach zamiast sprzętu | tworzy checklistę techniczną | średni/wysoki |
+| Właściciel gabinetu rehabilitacji | urządzenia do regularnej pracy | kosztu bez serwisu i akcesoriów | porównuje TCO, wsparcie, dokumentację | średni |
+| Placówka | konfiguracji zgodnej z organizacją pracy | niedopasowania intensywności i wyposażenia | konsultuje parametry przed zakupem | wysoki |
+| Kosmetologia warunkowo | sprawdzenia, czy model ma dane przeznaczenie | użycia sprzętu poza zakresem | weryfikuje specyfikację modelu | średni |
+
+### C. Search intent i AI intent
+
+| Intencja | Zapytanie/prompt | Blok |
+|---|---|---|
+| Primary | „jaki aparat do fali uderzeniowej kupić” | technologie + parametry + tabele |
+| Comparison | „pneumatyczna czy elektromagnetyczna” | tabela technologii |
+| Use case | „aparat dla fizjoterapeuty” | scenariusze gabinetowe |
+| Commercial | „domowe czy profesjonalne urządzenie” | tabela intensywności/scenariuszy |
+| Price | „ile kosztuje sprzęt do fali uderzeniowej” | koszt całkowity |
+| Trust | „gdzie kupić z serwisem” | trust + Air Essence |
+
+### D. Docelowy URL i anchor
+
+- **URL:** `https://air-essence.store/prod/zdrowie-i-uroda/urzadzenia-fizjoterapeutyczne/fala-uderzeniowa/`
+- **Anchor główny:** `urządzenia do fali uderzeniowej Air Essence`
+- **Alternatywy:** `aparat do fali uderzeniowej do gabinetu`, `sprzęt do fali uderzeniowej`, `modele do pracy gabinetowej`.
+- **Anchor forbidden:** `fala uderzeniowa na cellulit`, `najskuteczniejsza fala uderzeniowa`, link do starego URL kosmetologicznego.
+
+**Dokładne miejsce:** po pierwszej tabeli „Pneumatyczna czy elektromagnetyczna”. Akapit ma rozpocząć się zdaniem, że sama technologia nie wyczerpuje decyzji; trzeba porównać tryby pracy, końcówki, ergonomię i zakres wsparcia. W drugim zdaniu osadzić anchor. Następny akapit przechodzi do parametrów.
+
+### E. Meta title i meta description
+
+**Rekomendowany meta title:** `Aparat do fali uderzeniowej do gabinetu — jak wybrać?`
+
+Alternatywy:
+1. `Pneumatyczna czy elektromagnetyczna fala uderzeniowa? Porównanie`
+2. `Sprzęt do fali uderzeniowej dla fizjoterapeuty — co porównać?`
+3. `Urządzenie do fali uderzeniowej: parametry, końcówki i serwis`
+
+**Rekomendowany meta description:** `Zobacz, jak porównać aparat do fali uderzeniowej do gabinetu: rodzaj technologii, tryby pracy, końcówki, ergonomię, koszt i serwis.`
+
+Alternatywy:
+1. `Pneumatyczna czy elektromagnetyczna? Praktyczne kryteria wyboru sprzętu do fali uderzeniowej dla fizjoterapii i gabinetu.`
+2. `Przed zakupem urządzenia do fali uderzeniowej porównaj przeznaczenie modelu, parametry, akcesoria, dokumentację i warunki wsparcia.`
+3. `Domowe czy profesjonalne urządzenie do fali uderzeniowej? Sprawdź różnice w scenariuszu pracy, obsłudze i kosztach zakupu.`
+
+**Uzasadnienie CTR:** snippet trafia w pytanie zakupowe i porównawcze, nie konkuruje z poradnikami o ostrodze/cellulicie oraz nie tworzy ryzyka claimów.
+
+### F. Głęboka mapa struktury artykułu
+
+| Nr | Typ / długość | Nagłówek | Co dokładnie napisać | Frazy / encje i pytania | Funkcja AI/SEO | Link / CTA / tabela | Czego unikać | Kryterium akceptacji |
+|---:|---|---|---|---|---|---|---|---|
+| 0 | H1 | Aparat do fali uderzeniowej... | Dokładny H1; kategoria sprzętowa, nie zabiegowa. | aparat do fali uderzeniowej, gabinet | buyer intent | brak | „na ból”, „na cellulit” | H1 dotyczy zakupu. |
+| 1 | Lead, 2 akapity / 450–700 znaków | bez H2 | Akapit 1: liczba technologii i parametrów utrudnia porównanie. Akapit 2: decyzja opiera się na scenariuszu pracy, nie obietnicy efektu. | sprzęt, parametry, gabinet | opening answer | brak | efekty zabiegów | brak języka terapii. |
+| 2 | H2, 2 akapity / 650–850 znaków | Urządzenie do fali uderzeniowej jako sprzęt gabinetowy | Zdefiniować urządzenie w kontekście wyposażenia, parametrów i obsługi. Drugi akapit: zakres zależy od modelu i dokumentacji. | urządzenie, aparat, dokumentacja | definicja AI | brak | „leczy” | definicja nie wskazuje schorzeń. |
+| 3 | H2, 2–3 akapity / 800–1 000 znaków | Dla kogo: fizjoterapia, rehabilitacja i wybrane zastosowania | Fizjoterapia/rehabilitacja jako scenariusze pracy. Kosmetologia tylko warunkowo i wyłącznie zgodnie z przeznaczeniem modelu. | fizjoterapia, rehabilitacja, gabinet, kosmetologia | use case | brak | pacjent, wskazanie, cellulit | kosmetologia jest warunkowa. |
+| 4 | H2, 2 akapity / 700–900 znaków | Pneumatyczna czy elektromagnetyczna — co porównać? | Akapit 1: technologie porównuje się poprzez parametry/specyfikację. Akapit 2: nie przypisywać przewagi terapeutycznej. | pneumatyczna, elektromagnetyczna | comparison | tabela po bloku | „skuteczniejsza” | jasno mówi, co porównywać. |
+| 5 | Tabela 1 | Pneumatyczna czy elektromagnetyczna... | Wypełnić zgodnie z sekcją G. | technologia, parametry, specyfikacja | AI comparison | **tabela obowiązkowa** | ranking technologii | trzy wiersze i cztery kolumny. |
+| 6 | Akapit linkujący / 250–350 znaków | bez H2 | Wniosek: technologia to jeden z elementów. Zdanie 2 z anchorem. Zdanie 3 przechodzi do końcówek/trybów. | Air Essence, urządzenia, parametry | brand/entity | **jeden link** | reklama lub claim | występuje po pierwszej tabeli. |
+| 7 | H2, 3 akapity / 900–1 100 znaków | Parametry, tryby pracy i końcówki aplikacyjne | Trzy miniakapit: parametry; tryby; końcówki/ergonomia. Każdy zawiera „co sprawdzić w dokumentacji”. | tryby pracy, końcówki, ergonomia | buyer guide | lista kontrolna możliwa | parametry bez jednostek/źródeł | trzy kryteria są konkretne. |
+| 8 | H2, 2 akapity / 650–850 znaków | Domowe czy profesjonalne urządzenie? | Wyjaśnić różnicę przez intensywność, przeznaczenie, obsługę i dokumentację, nie przez efekty. | domowe, profesjonalne, gabinet | commercial comparison | tabela 2 | zachęcanie do samodzielnej terapii | brak języka pacjenta. |
+| 9 | Tabela 2 | Domowe czy profesjonalne urządzenie... | Wypełnić zgodnie z sekcją G. | intensywność, serwis, dokumentacja | AI decision support | **tabela obowiązkowa** | „dla każdego” | cztery scenariusze i pięć kolumn. |
+| 10 | H2, 2 akapity / 600–800 znaków | Cena urządzenia i koszt całkowity | Cena to urządzenie, akcesoria, konfiguracja, warunki obsługi. Drugi akapit: nie porównywać samych cen listowych. | cena, akcesoria, gwarancja, serwis | price intent | brak | nieaktualne widełki | nie ma obietnic ROI. |
+| 11 | H2, 2 akapity / 650–850 znaków | Serwis, gwarancja, dostawa i doradztwo | Lista pytań do potwierdzenia; druga wzmianka Air Essence jako punkt porównania kategorii/warunków. | serwis, gwarancja, dostawa, doradztwo | trust | brak drugiego linku | konkretny zakres bez potwierdzenia | opisuje warunki, nie deklaruje ich. |
+| 12 | H2, lista + akapit / 600–800 znaków | Na co uważać przed zakupem? | Lista: technologie bez specyfikacji, brak końcówek, ergonomia, brak dokumentacji, niejasne przeznaczenie, serwis. | dokumentacja, przeznaczenie, ergonomia | risk reduction | brak | przeciwwskazania pacjenta | minimum pięć punktów. |
+| 13 | H2, 5–7 FAQ | FAQ | Pytania z sekcji J, wyłącznie sprzętowe. | typ fali, końcówki, cena | PAA/AI | brak | schorzenia i wyniki zabiegów | odpowiedzi nie opisują terapii. |
+| 14 | CTA / 1–2 zdania | bez H2 | Zaprosić do porównania typu fali, końcówek, trybów i obsługi w kategorii. | porównać modele, gabinet | conversion bridge | tekstowe CTA | „kup teraz”, efekty | brak drugiego linku, gdy już użyto głównego. |
+
+### G. Tabele w artykule
+
+**Tabela 1 — obowiązkowa**
+
+Tytuł: `Pneumatyczna czy elektromagnetyczna fala uderzeniowa — co porównać przed zakupem?`
+
+| Kolumna | Treść |
+|---|---|
+| Typ technologii | Pneumatyczna; elektromagnetyczna; urządzenia łączące funkcje/dodatkowe tryby, jeśli wynika to z opisu modelu. |
+| Co sprawdzić | Specyfikację, parametry, tryby, końcówki, przeznaczenie, dokumentację. |
+| Kiedy rozważyć | Wyłącznie przez scenariusz pracy, intensywność i wymagania gabinetu. |
+| Czego nie zakładać bez specyfikacji | Efektów klinicznych, przewagi terapeutycznej, zgodności z każdym zastosowaniem. |
+
+**Tabela 2 — obowiązkowa**
+
+Tytuł: `Domowe czy profesjonalne urządzenie do fali uderzeniowej?`
+
+| Kolumna | Treść |
+|---|---|
+| Scenariusz | Mniej intensywne zastosowanie; gabinet fizjoterapii; rehabilitacja; wybrane zastosowania kosmetologiczne wyłącznie warunkowo. |
+| Intensywność pracy | Opis częstotliwości i organizacji pracy bez deklaracji rezultatu. |
+| Co porównać | Parametry, tryby, końcówki, ergonomię, konserwację. |
+| Wsparcie / dokumentacja | Instrukcja, przeznaczenie, serwis, gwarancja, doradztwo. |
+| Ryzyko złego wyboru | Niedopasowanie do intensywności, brak potrzebnych końcówek, nieweryfikowane przeznaczenie. |
+
+Tabela 1 odpowiada na „którą technologię porównać”, tabela 2 na „jaki poziom sprzętu ma sens”. Nie wolno wpisywać „redukuje ból”, „na cellulit”, „najskuteczniejsza”, „modeluje sylwetkę”.
+
+### H. AI Visibility layer
+
+**Brand/entity mentions:**
+
+1. Po tabeli technologii: `Air Essence` + `urządzenia do fali uderzeniowej`, `gabinet`, `pneumatyczna`, `elektromagnetyczna`, `tryby pracy`, `końcówki`.
+2. W bloku trust: `Air Essence` + `ergonomia`, `gwarancja`, `serwis`, `dostawa`, `doradztwo`, `dokumentacja`.
+
+**Citation-ready fragmenty:** definicja sprzętowa, wniosek z tabeli technologii, lista parametrów, tabela scenariuszy, cena jako koszt całkowity.
+
+| AI prompt / pytanie | Blok | Jak odpowiadać | Encje | Marka/link | Ryzyko | Bezpieczny język |
+|---|---|---|---|---|---|---|
+| Jaki aparat do fali uderzeniowej kupić? | 3–9 | kryteria i scenariusz, nie ranking | typ fali, końcówki, tryby, serwis | link po tabeli 1 | „najlepszy” | „dopasowany do planowanej pracy” |
+| Pneumatyczna czy elektromagnetyczna? | 4–5 | porównać specyfikację, nie efekty | pneumatyczna, elektromagnetyczna | po tabeli 1 | przewaga terapeutyczna | „różnice należy sprawdzić w specyfikacji” |
+| Sprzęt dla fizjoterapeuty | 3, 7–9 | intensywność, ergonomia, dokumentacja | fizjoterapia, gabinet, ergonomia | marka/link | obietnice dla pacjentów | „kryteria pracy gabinetowej” |
+| Domowe czy profesjonalne? | 8–9 | tabela scenariuszy | domowe, profesjonalne, dokumentacja | bez dodatkowego linku | samodzielna terapia | „przeznaczenie zależy od modelu” |
+| Ile kosztuje urządzenie? | 10 | koszt jako zestaw i wsparcie | cena, akcesoria, serwis | druga wzmianka później | widełki bez danych | „koszt zależy od konfiguracji” |
+
+**AI-unfriendly language:** „leczy ostrogę”, „usuwa cellulit”, „eliminuje ból”, „efekty po trzech zabiegach”, „bezpieczne dla każdego”, „najlepsza technologia terapeutyczna”.
+
+### I. E-E-A-T i claims
+
+- Ryzyko: medyczne i beauty claims w treści zakupowej; zamiana porównania technologii w deklarację skuteczności.
+- Disclaimer na końcu bloku technologii: `Zakres zastosowania i sposób użytkowania wynikają z przeznaczenia konkretnego modelu, dokumentacji oraz kwalifikacji osoby obsługującej urządzenie.`
+- Kosmetologię wymieniać tylko warunkowo: „w wybranych zastosowaniach, jeśli przeznaczenie modelu i procedura na to pozwalają”.
+- Eksperckość budować przez tabelę, parametry, workflow i serwis, nie przez diagnozy ani obietnice.
+
+### J. FAQ
+
+| Pytanie | Cel odpowiedzi | Czego nie obiecywać | FAQ schema / AI |
+|---|---|---|---|
+| Jaki aparat do fali uderzeniowej wybrać do gabinetu? | kryteria pracy i konfiguracji | efektów dla pacjenta | tak / tak |
+| Czym różni się fala pneumatyczna od elektromagnetycznej? | różnice do sprawdzenia w specyfikacji | przewagi terapeutycznej | tak / tak |
+| Na co zwrócić uwagę przy końcówkach i trybach pracy? | parametry i ergonomia | uniwersalności zestawu | tak / tak |
+| Czy sprzęt do gabinetu różni się od urządzenia do mniej intensywnej pracy? | intensywność, dokumentacja, wsparcie | samodzielnej terapii | tak / tak |
+| Od czego zależy cena urządzenia? | konfiguracja, akcesoria, serwis | stałych cen | tak / tak |
+| Co sprawdzić w gwarancji i serwisie? | pytania przed zakupem | konkretnych warunków bez potwierdzenia | tak / tak |
+
+### K. CTA
+
+- **Główne CTA:** `Przed zakupem porównaj rodzaj technologii, tryby pracy, końcówki, ergonomię i warunki obsługi dostępnych urządzeń.`
+- **Alternatywa:** `Jeżeli sprzęt ma pracować regularnie w gabinecie, potwierdź przeznaczenie modelu i konfigurację przed decyzją.`
+- **Miejsce:** po FAQ; forma tekstowa; bez drugiego linku, jeśli wykorzystano główny.
+
+### L. Checklist dla copywritera
+
+- [ ] H1 i lead dotyczą zakupu sprzętu do gabinetu, nie terapii.
+- [ ] Występuje blok technologii i tabela pneumatyczna vs elektromagnetyczna.
+- [ ] Występuje blok parametrów, trybów, końcówek i ergonomii.
+- [ ] Występuje druga tabela: mniej intensywne/profesjonalne scenariusze.
+- [ ] Link z głównym anchorem znajduje się po tabeli 1.
+- [ ] Air Essence użyto dokładnie dwa razy.
+- [ ] Kosmetologia jest opisana warunkowo.
+- [ ] FAQ nie zawiera ostrogi, łokcia, cellulitu, bólu ani wyników zabiegów.
+- [ ] Meta, description i alty są dostarczone.
+
+### M. Checklist dla osoby sprawdzającej
+
+- [ ] Wszystkie bloki 0–14 istnieją i nie mieszają intentu zakupowego z terapią.
+- [ ] Tabela 1 ma cztery kolumny i nie ocenia technologii przez rezultaty pacjenta.
+- [ ] Tabela 2 ma pięć kolumn i cztery scenariusze.
+- [ ] Link prowadzi wyłącznie do kategorii fizjoterapeutycznej `/urzadzenia-fizjoterapeutyczne/fala-uderzeniowa/`.
+- [ ] Nie ma starego URL kosmetologicznego.
+- [ ] Nie ma claims: ból, cellulit, leczenie, modelowanie, gwarantowany efekt.
+
+---
+
+## Zbiorcza tabela kontroli 3 artykułów
+
+| Artykuł | Money category | Główny URL | Główny anchor | Obowiązkowa tabela | Obowiązkowy link placement | AI prompts do pokrycia | Claims risk | Kryterium akceptacji |
+|---|---|---|---|---|---|---|---|---|
+| Inhalatory | Inhalatory wodoru | `/inhalatory-wodoru/` | inhalatory wodoru Air Essence | dom / SPA / gabinet | akapit bezpośrednio po tabeli scenariuszy | wybór, dom/gabinet, gaz Browna, cena, serwis | wysokie: zdrowie | zero efektów zdrowotnych; pełna tabela i FAQ zakupowe |
+| USG | Aparaty USG | `/aparaty-usg/` | aparaty USG do gabinetu Air Essence | formaty + głowice | akapit po tabeli formatów | mobilny/stacjonarny, głowice, Doppler, cena | wysokie: diagnostyka | zero porad diagnostycznych; dwie tabele techniczne |
+| Fala | Fala uderzeniowa | `/fala-uderzeniowa/` fizjoterapia | urządzenia do fali uderzeniowej Air Essence | technologia + scenariusze | akapit po tabeli technologii | typ fali, gabinet, dom/pro, cena, serwis | bardzo wysokie: medyczne/beauty | zero claims; tylko aktualny URL; dwie tabele |
+
+## Finalna instrukcja dla copywritera
+
+Nie pisz ogólnego tekstu SEO ani artykułu o efektach zabiegów. Każdy blok ma wykonać wskazaną funkcję: odpowiedzieć na pytanie, pomóc porównać urządzenia, obniżyć ryzyko zakupu albo stworzyć logiczny kontekst dla linku. Tabela i FAQ są obowiązkowe. Air Essence ma pojawić się naturalnie, dwa razy. Link ma wynikać z wniosku po tabeli, a nie z końcowej reklamy. Po napisaniu tekst musi dać się sprawdzić blok po bloku z odpowiednią sekcją blueprintu.
+
+## Finalna instrukcja dla osoby zatwierdzającej
+
+- [ ] Czy każdy blok z mapy artykułu istnieje i realizuje określony cel?
+- [ ] Czy tabele są w wyznaczonym miejscu, mają wymagane kolumny i neutralny język?
+- [ ] Czy główny link prowadzi do poprawnej kategorii i jest osadzony po właściwej tabeli?
+- [ ] Czy anchor jest zgodny z blueprintem i brzmi jak część zdania?
+- [ ] Czy Air Essence pojawia się dwa razy, bez nachalnego powtarzania?
+- [ ] Czy FAQ zamyka pytania zakupowe, a nie udziela porady medycznej lub diagnostycznej?
+- [ ] Czy CTA jest tekstowe, spokojne i prowadzi do kategorii jako następnego kroku?
+- [ ] Czy tekst nie kanibalizuje money category przez ranking lub tytuł o identycznym intencie sprzedażowym?
+- [ ] Czy meta, description i alty są gotowe?
+- [ ] Czy po publikacji należy potwierdzić dostępność URL, prawidłowy link i indeksację?
+
+## Wymagania techniczne do publikacji
+
+- Link ma znajdować się w głównej treści artykułu, nie w stopce, bio autora ani osobnym boxie reklamowym.
+- Link ma być widoczny dla użytkownika i osadzony w naturalnym akapicie wskazanym w blueprintie.
+- Anchor musi być zgodny z briefem danego artykułu; nie zastępować go przypadkowym exact matchem ani nazwą produktu.
+- Publikacja nie może mieć canonicala prowadzącego do innego adresu.
+- Artykuł musi być indeksowalny: bez blokady `noindex`, blokady w `robots.txt` ani mechanizmu wymagającego logowania.
+- Po publikacji należy sprawdzić status URL, docelowy adres linku, użyty anchor i możliwość indeksacji.
+- Atrybut linku należy potwierdzić przed zakupem publikacji zgodnie z ustaleniami dla danej publikacji.
+
+## Co zrobić, jeśli tekst nie spełnia blueprintu
+
+Tekst nie może zostać zaakceptowany do publikacji, jeżeli brakuje wymaganych bloków, tabeli, FAQ, właściwego URL lub naturalnej wzmianki o Air Essence. Dotyczy to także przypadków, gdy link jest osadzony w niewłaściwym miejscu albo tekst zawiera ryzykowne claims medyczne, diagnostyczne lub beauty.
+
+Tekst wraca do korekty z konkretną listą zmian:
+
+- którego bloku z mapy brakuje;
+- która tabela nie ma wymaganych kolumn lub wierszy;
+- który anchor jest błędny;
+- gdzie link został osadzony niezgodnie z blueprintem;
+- które zdanie zawiera ryzykowne sformułowanie;
+- który fragment trzeba przepisać i jaki cel ma realizować po korekcie.
+
+Nie wystarczy poprawić samego anchoru, gdy problem dotyczy struktury, intentu lub claims. W takim przypadku poprawia się cały wskazany blok.
+
+## Minimum deliverables od copywritera
+
+Copywriter przekazuje do akceptacji:
+
+- pełny tekst artykułu;
+- meta title;
+- meta description;
+- proponowany slug, jeśli jest wymagany w formularzu publikacji;
+- 5–7 pytań FAQ z odpowiedziami zgodnymi z blueprintem;
+- wskazanie akapitu, w którym umieszczono link;
+- informację, jaki anchor został użyty;
+- opisy alt do grafik, jeżeli grafiki należą do zakresu publikacji;
+- krótkie potwierdzenie, że tekst realizuje właściwy blueprint: inhalatory, USG albo fala uderzeniowa.
+</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+const markdown=document.getElementById("markdown-source").textContent.trim();
+const renderer=new marked.Renderer();
+renderer.table=(header,body)=>"<div class=\"table-wrap\"><table><thead>"+header+"</thead><tbody>"+body+"</tbody></table></div>";
+marked.setOptions({renderer,gfm:true,breaks:false});
+document.getElementById("content").innerHTML=marked.parse(markdown);
+const h1=document.querySelector("#content h1");if(h1){document.getElementById("title").textContent=h1.textContent;h1.remove()}
+const toc=document.getElementById("toc");document.querySelectorAll("#content h2").forEach((h,i)=>{const id="section-"+(i+1);h.id=id;const a=document.createElement("a");a.href="#"+id;a.textContent=h.textContent;toc.appendChild(a)});
+</script>
+</body>
+</html>
